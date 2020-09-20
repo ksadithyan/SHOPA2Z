@@ -1,0 +1,20 @@
+[
+    {
+        "name": "HEADSET",
+        "price": 1000,
+        "image": "../assets/images/headset.jpg",
+        "qty":0
+    },
+    {
+        "name": "SMARTPHONE",
+        "price": 12000,
+        "image": "../assets/images/smartphone.jpg",
+        "qty":0
+    },
+    {
+        "name": "MOUSE",
+        "price": 350,
+        "image": "../assets/images/mouse.jpg",
+        "qty":0
+    }
+]

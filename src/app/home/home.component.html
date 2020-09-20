@@ -1,0 +1,23 @@
+<!-- <p>home works!</p> -->
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">NAME</th>
+        <th scope="col">PRICE</th>
+        <th scope="col">IMAGE</th>
+        <th scope="col">QUANTITY</th>
+        <th scope="col"></th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let list of pList">
+        <th scope="row">{{list.name}}</th>
+        <td>{{list.price}}₹</td>
+        <td><img src={{list.image}} alt="" style="border-color:aqua; border-style: dotted;"></td>
+        <td><button class="btn btn-secondary" (click)="dec(list)">-</button>  {{list.qty}}  <button class="btn btn-secondary" (click)="inc(list)">+</button></td>
+        <td><button class="btn btn-primary" (click)="add2Cart(list)">ADD TO CART</button></td>
+      </tr>
+      
+    </tbody>
+  </table>
