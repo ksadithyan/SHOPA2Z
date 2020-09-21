@@ -6,7 +6,6 @@ import { Injectable } from '@angular/core';
 export class CartService {
   private c_list
   constructor() { }
-
   getData(o)
   {
     this.c_list=o
@@ -15,4 +14,5 @@ export class CartService {
   {
     return this.c_list
   }
+ 
 }

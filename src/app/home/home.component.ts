@@ -60,14 +60,14 @@ export class HomeComponent implements OnInit {
     
     for(let i=0;i<this.cartlist.length;i++)
     {
-      if(this.cartlist[i].name==o.name)
+      if(this.cartlist[i].name==o.name && o.qty!=0)
       {
         this.cartlist[i].qty=o.qty
         console.log("updated cart list",this.cartlist)
         elementfound=true
       }
     }
-    if(elementfound==false)
+    if(elementfound==false && o.qty!=0)
     {
       this.cartlist.push(o);
     console.log("this is the cart list",this.cartlist)

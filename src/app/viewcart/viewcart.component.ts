@@ -7,7 +7,7 @@ import { CartService } from '../cart.service';
   styleUrls: ['./viewcart.component.css']
 })
 export class ViewcartComponent implements OnInit {
-  public cartList_new;
+  public cartList_new=[];
   totalcost=0
   constructor(private C_service1:CartService) { 
     this.cartList_new=C_service1.setData()
